@@ -13,3 +13,25 @@ body {
 .title {
   text-align: center;
 }
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#F7B2BD, #FFEBF7);
+  transition: background 0.3s ease;
+  border: 1px solid white;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#FF8CC6, #FFEBF7);
+  color: white;
+}
+
+a {
+  color: #FDEFED;
+}
+
+a:hover {
+  color: ghostwhite;
+}

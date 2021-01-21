@@ -6,9 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Seeding..."
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
-Cocktail.create(name:"The Lupita")
+Ingredient.create(name: "Lemon")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Mint leaves")
+Ingredient.create(name: "Vodka")
+Ingredient.create(name: "Rum")
+Ingredient.create(name: "Cola")
+Ingredient.create(name: "Apple juice")
+Ingredient.create(name: "Orange juice")
+Ingredient.create(name: "Olives")
 Dose.create(description: "4 cl")
 puts "Seeding Complete!"

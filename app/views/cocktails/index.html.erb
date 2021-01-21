@@ -2,7 +2,7 @@
   <div class="container">
     <h1>The Velvet Room</h1>
     <p>Welcome to The Velvet Room loves. Do stay for a drink or two will you?</p>
-    <%= link_to "Add a Cocktail", new_cocktail_path %>
+    <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-gradient" %>
   </div>
 </div>
 
@@ -16,7 +16,7 @@
   <div class="main-container">
     <div class="cards">
       <% @cocktails.each do |cocktail| %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cloudinary_url(cocktail.photo.key) %>)">
           <%= link_to cocktail.name, cocktail_path(cocktail)  %>
         </div>
       <% end %>
